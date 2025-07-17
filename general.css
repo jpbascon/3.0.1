@@ -1,0 +1,161 @@
+@import url('https://fonts.cdnfonts.com/css/alliance-no1');
+
+:root {
+  --violet: rgb(64, 18, 150);
+  --darkviolet: rgb(25, 5, 41);
+  --lightpink: rgb(255, 150, 150);
+  --purple: rgb(112, 72, 255);
+  --light-white: rgba(255, 255, 255, 0.795);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+body {
+  width: 100%;
+  font-family: 'Alliance No.1', sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+
+.light-pink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: var(--lightpink);
+}
+
+.purple {
+  position: absolute;
+  bottom: 13%;
+  right: 18%;
+  width: 100px;
+  height: 100px;
+  opacity: .9;
+  z-index: 20;
+  border-radius: 50%;
+  background-color: var(--purple);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.header h1 {
+  color: var(--darkviolet);
+}
+
+.header p {
+  color: rgb(112, 112, 112);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  width: 100%;
+  padding: .3rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.left-section {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background-color: var(--violet);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.information h2:nth-of-type(1) {
+  margin-bottom: .8rem;
+}
+
+.information p:nth-of-type(1) {
+  font-size: .9rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 9rem;
+}
+
+.contacts {
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts p {
+  font-size: .9rem;
+}
+
+.social-container {
+  display: flex;
+  gap: .4rem;
+}
+
+.contact-icon {
+  fill: var(--lightpink);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.socials:hover {
+  background-color: var(--lightpink);
+}
+
+.icons {
+  fill: white;
+}
+
+.right-section {
+  width: 60%;
+  padding: 2rem;
+}
