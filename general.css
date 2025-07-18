@@ -1,11 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/alliance-no1');
 
+@font-face {
+  font-family: 'Alliance No 1 Bold';
+  src: url('./Alliance\ No.1\ Bold.otf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --violet: rgb(64, 18, 150);
-  --darkviolet: rgb(25, 5, 41);
+  --darkviolet: rgb(32, 7, 53);
   --lightpink: rgb(255, 150, 150);
   --purple: rgb(112, 72, 255);
-  --light-white: rgba(255, 255, 255, 0.795);
+  --light-white: rgb(209, 209, 209);
 }
 
 *,
@@ -73,6 +80,7 @@ body {
 }
 
 .header h1 {
+  font-family: 'Alliance No 1 Bold';
   color: var(--darkviolet);
 }
 
@@ -101,6 +109,7 @@ body {
 }
 
 .information h2:nth-of-type(1) {
+  font-family: 'Alliance No 1 Bold';
   margin-bottom: .8rem;
 }
 
@@ -156,6 +165,74 @@ body {
 }
 
 .right-section {
+  display: flex;
+  flex-direction: column;
   width: 60%;
   padding: 2rem;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  font-size: .7rem;
+  color: var(--darkviolet);
+}
+
+.form-group:hover label {
+  color: var(--violet);
+}
+
+.form-group input {
+  font-size: .9rem;
+  padding: 6px 0 12px 0;
+  transition: border 0.15s ease;
+  border: none;
+  border-bottom: 2px solid var(--light-white);
+}
+
+.form-group input:hover {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--violet);
+}
+
+.form-group input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--light-white);
+}
+
+.form-group p:nth-of-type(1) {
+  font-family: 'Alliance No 1 Bold';
+  font-size: .9rem;
+  color: var(--darkviolet);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-group label {
+  font-size: .9rem;
+}
+
+.radio-group input:focus {
+  background-color: none;
 }
